@@ -64,8 +64,8 @@ public class ExchangeRate {
             //存储在桌面文件中
             File file = new File(FILE_Excel);
             bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(file));
-            byte[] data = new byte[4096];
             int n;
+            byte[] data = new byte[4096];
             while ((n = bufferedInputStream.read(data)) != -1) {
                 bufferedOutputStream.write(data, 0, n);
             }
